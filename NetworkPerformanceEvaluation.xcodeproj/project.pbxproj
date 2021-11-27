@@ -10,10 +10,11 @@
 		B6D206F9E20BC955091587A7 /* Pods_NetworkPerformanceEvaluation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C43B0FC250DB89A2A1BCB5FA /* Pods_NetworkPerformanceEvaluation.framework */; };
 		EECD45C927526CD200B2DA26 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECD45C827526CD200B2DA26 /* AppDelegate.swift */; };
 		EECD45CB27526CD200B2DA26 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECD45CA27526CD200B2DA26 /* SceneDelegate.swift */; };
-		EECD45CD27526CD200B2DA26 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECD45CC27526CD200B2DA26 /* ViewController.swift */; };
-		EECD45D027526CD200B2DA26 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EECD45CE27526CD200B2DA26 /* Main.storyboard */; };
+		EECD45CD27526CD200B2DA26 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECD45CC27526CD200B2DA26 /* MainViewController.swift */; };
 		EECD45D227526CD300B2DA26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EECD45D127526CD300B2DA26 /* Assets.xcassets */; };
 		EECD45D527526CD300B2DA26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EECD45D327526CD300B2DA26 /* LaunchScreen.storyboard */; };
+		EECD45E6275272AB00B2DA26 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECD45E5275272AB00B2DA26 /* Network.swift */; };
+		EECD45E8275272EA00B2DA26 /* BaseApI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECD45E7275272EA00B2DA26 /* BaseApI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,11 +24,12 @@
 		EECD45C527526CD200B2DA26 /* NetworkPerformanceEvaluation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetworkPerformanceEvaluation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EECD45C827526CD200B2DA26 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EECD45CA27526CD200B2DA26 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EECD45CC27526CD200B2DA26 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		EECD45CF27526CD200B2DA26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EECD45CC27526CD200B2DA26 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		EECD45D127526CD300B2DA26 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EECD45D427526CD300B2DA26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		EECD45D627526CD300B2DA26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EECD45D627526CD300B2DA26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = NetworkPerformanceEvaluation/Supporting/Info.plist; sourceTree = SOURCE_ROOT; };
+		EECD45E5275272AB00B2DA26 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		EECD45E7275272EA00B2DA26 /* BaseApI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseApI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +50,6 @@
 				48A223EBC79EADFC1B70A016 /* Pods-NetworkPerformanceEvaluation.debug.xcconfig */,
 				C0C6464C59918EAD3FBBD9EA /* Pods-NetworkPerformanceEvaluation.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -81,15 +82,88 @@
 		EECD45C727526CD200B2DA26 /* NetworkPerformanceEvaluation */ = {
 			isa = PBXGroup;
 			children = (
-				EECD45C827526CD200B2DA26 /* AppDelegate.swift */,
-				EECD45CA27526CD200B2DA26 /* SceneDelegate.swift */,
-				EECD45CC27526CD200B2DA26 /* ViewController.swift */,
-				EECD45CE27526CD200B2DA26 /* Main.storyboard */,
-				EECD45D127526CD300B2DA26 /* Assets.xcassets */,
-				EECD45D327526CD300B2DA26 /* LaunchScreen.storyboard */,
-				EECD45D627526CD300B2DA26 /* Info.plist */,
+				EECD45E22752718A00B2DA26 /* Supporting */,
+				EECD45E12752706700B2DA26 /* Resource */,
+				EECD45E02752705B00B2DA26 /* Source */,
 			);
 			path = NetworkPerformanceEvaluation;
+			sourceTree = "<group>";
+		};
+		EECD45DC2752703000B2DA26 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				EECD45C827526CD200B2DA26 /* AppDelegate.swift */,
+				EECD45CA27526CD200B2DA26 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		EECD45DD2752704100B2DA26 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EECD45CC27526CD200B2DA26 /* MainViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EECD45DE2752704C00B2DA26 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EECD45DF2752705000B2DA26 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EECD45E02752705B00B2DA26 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				EECD45DC2752703000B2DA26 /* Application */,
+				EECD45DE2752704C00B2DA26 /* Model */,
+				EECD45DF2752705000B2DA26 /* View */,
+				EECD45DD2752704100B2DA26 /* Controller */,
+				EECD45E42752729000B2DA26 /* Service */,
+				EECD45E32752728A00B2DA26 /* Networking */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		EECD45E12752706700B2DA26 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				EECD45D127526CD300B2DA26 /* Assets.xcassets */,
+				EECD45D327526CD300B2DA26 /* LaunchScreen.storyboard */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		EECD45E22752718A00B2DA26 /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				EECD45D627526CD300B2DA26 /* Info.plist */,
+			);
+			path = Supporting;
+			sourceTree = "<group>";
+		};
+		EECD45E32752728A00B2DA26 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				EECD45E5275272AB00B2DA26 /* Network.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		EECD45E42752729000B2DA26 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				EECD45E7275272EA00B2DA26 /* BaseApI.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,7 +228,6 @@
 			files = (
 				EECD45D527526CD300B2DA26 /* LaunchScreen.storyboard in Resources */,
 				EECD45D227526CD300B2DA26 /* Assets.xcassets in Resources */,
-				EECD45D027526CD200B2DA26 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,8 +280,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EECD45CD27526CD200B2DA26 /* ViewController.swift in Sources */,
+				EECD45CD27526CD200B2DA26 /* MainViewController.swift in Sources */,
 				EECD45C927526CD200B2DA26 /* AppDelegate.swift in Sources */,
+				EECD45E6275272AB00B2DA26 /* Network.swift in Sources */,
+				EECD45E8275272EA00B2DA26 /* BaseApI.swift in Sources */,
 				EECD45CB27526CD200B2DA26 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -216,14 +291,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		EECD45CE27526CD200B2DA26 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EECD45CF27526CD200B2DA26 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		EECD45D327526CD300B2DA26 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -361,10 +428,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7JA353ZJMP;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = NetworkPerformanceEvaluation/Info.plist;
+				INFOPLIST_FILE = NetworkPerformanceEvaluation/Supporting/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -390,10 +456,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7JA353ZJMP;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = NetworkPerformanceEvaluation/Info.plist;
+				INFOPLIST_FILE = NetworkPerformanceEvaluation/Supporting/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
