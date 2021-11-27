@@ -9,6 +9,7 @@ target 'NetworkPerformanceEvaluation' do
   pod 'Then'
   pod 'Alamofire', '~> 5.2'
   pod 'SnapKit', '~> 5.0.0'
+  pod 'KeychainSwift', '~> 19.0'
 
 
 end

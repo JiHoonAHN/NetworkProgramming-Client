@@ -15,6 +15,16 @@
 		EECD45D527526CD300B2DA26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EECD45D327526CD300B2DA26 /* LaunchScreen.storyboard */; };
 		EECD45E6275272AB00B2DA26 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECD45E5275272AB00B2DA26 /* Network.swift */; };
 		EECD45E8275272EA00B2DA26 /* BaseApI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECD45E7275272EA00B2DA26 /* BaseApI.swift */; };
+		EECD45EA275276DB00B2DA26 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECD45E9275276DB00B2DA26 /* LoginViewController.swift */; };
+		EECD45ED2752774000B2DA26 /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECD45EC2752774000B2DA26 /* BaseVC.swift */; };
+		EECD45F02752777000B2DA26 /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECD45EF2752777000B2DA26 /* TableView.swift */; };
+		EECD45F22752777900B2DA26 /* CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECD45F12752777900B2DA26 /* CollectionView.swift */; };
+		EECD45F5275280D400B2DA26 /* extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECD45F4275280D400B2DA26 /* extension.swift */; };
+		EECD45F7275281B000B2DA26 /* CustomTF.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECD45F6275281B000B2DA26 /* CustomTF.swift */; };
+		EECD45FA2752853100B2DA26 /* BaseModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECD45F92752853100B2DA26 /* BaseModal.swift */; };
+		EECD45FC2752856800B2DA26 /* StudentModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECD45FB2752856800B2DA26 /* StudentModal.swift */; };
+		EECD45FE2752857100B2DA26 /* TeacherModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECD45FD2752857100B2DA26 /* TeacherModal.swift */; };
+		EECD4600275285C700B2DA26 /* ModalTF.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECD45FF275285C700B2DA26 /* ModalTF.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +40,16 @@
 		EECD45D627526CD300B2DA26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = NetworkPerformanceEvaluation/Supporting/Info.plist; sourceTree = SOURCE_ROOT; };
 		EECD45E5275272AB00B2DA26 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		EECD45E7275272EA00B2DA26 /* BaseApI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseApI.swift; sourceTree = "<group>"; };
+		EECD45E9275276DB00B2DA26 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		EECD45EC2752774000B2DA26 /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
+		EECD45EF2752777000B2DA26 /* TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
+		EECD45F12752777900B2DA26 /* CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionView.swift; sourceTree = "<group>"; };
+		EECD45F4275280D400B2DA26 /* extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extension.swift; sourceTree = "<group>"; };
+		EECD45F6275281B000B2DA26 /* CustomTF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTF.swift; sourceTree = "<group>"; };
+		EECD45F92752853100B2DA26 /* BaseModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModal.swift; sourceTree = "<group>"; };
+		EECD45FB2752856800B2DA26 /* StudentModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentModal.swift; sourceTree = "<group>"; };
+		EECD45FD2752857100B2DA26 /* TeacherModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherModal.swift; sourceTree = "<group>"; };
+		EECD45FF275285C700B2DA26 /* ModalTF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalTF.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +121,9 @@
 		EECD45DD2752704100B2DA26 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				EECD45F8275284F400B2DA26 /* Modal */,
+				EECD45EB2752771C00B2DA26 /* Base */,
+				EECD45E9275276DB00B2DA26 /* LoginViewController.swift */,
 				EECD45CC27526CD200B2DA26 /* MainViewController.swift */,
 			);
 			path = Controller;
@@ -116,6 +139,9 @@
 		EECD45DF2752705000B2DA26 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				EECD45EE2752776800B2DA26 /* Base */,
+				EECD45F6275281B000B2DA26 /* CustomTF.swift */,
+				EECD45FF275285C700B2DA26 /* ModalTF.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -123,6 +149,7 @@
 		EECD45E02752705B00B2DA26 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				EECD45F3275280CB00B2DA26 /* Extension */,
 				EECD45DC2752703000B2DA26 /* Application */,
 				EECD45DE2752704C00B2DA26 /* Model */,
 				EECD45DF2752705000B2DA26 /* View */,
@@ -164,6 +191,41 @@
 				EECD45E7275272EA00B2DA26 /* BaseApI.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		EECD45EB2752771C00B2DA26 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				EECD45EC2752774000B2DA26 /* BaseVC.swift */,
+				EECD45F92752853100B2DA26 /* BaseModal.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		EECD45EE2752776800B2DA26 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				EECD45EF2752777000B2DA26 /* TableView.swift */,
+				EECD45F12752777900B2DA26 /* CollectionView.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		EECD45F3275280CB00B2DA26 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				EECD45F4275280D400B2DA26 /* extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		EECD45F8275284F400B2DA26 /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+				EECD45FB2752856800B2DA26 /* StudentModal.swift */,
+				EECD45FD2752857100B2DA26 /* TeacherModal.swift */,
+			);
+			path = Modal;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -280,10 +342,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EECD45F22752777900B2DA26 /* CollectionView.swift in Sources */,
+				EECD45EA275276DB00B2DA26 /* LoginViewController.swift in Sources */,
+				EECD4600275285C700B2DA26 /* ModalTF.swift in Sources */,
+				EECD45FE2752857100B2DA26 /* TeacherModal.swift in Sources */,
+				EECD45FA2752853100B2DA26 /* BaseModal.swift in Sources */,
 				EECD45CD27526CD200B2DA26 /* MainViewController.swift in Sources */,
+				EECD45F5275280D400B2DA26 /* extension.swift in Sources */,
 				EECD45C927526CD200B2DA26 /* AppDelegate.swift in Sources */,
+				EECD45FC2752856800B2DA26 /* StudentModal.swift in Sources */,
 				EECD45E6275272AB00B2DA26 /* Network.swift in Sources */,
 				EECD45E8275272EA00B2DA26 /* BaseApI.swift in Sources */,
+				EECD45F02752777000B2DA26 /* TableView.swift in Sources */,
+				EECD45ED2752774000B2DA26 /* BaseVC.swift in Sources */,
+				EECD45F7275281B000B2DA26 /* CustomTF.swift in Sources */,
 				EECD45CB27526CD200B2DA26 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
