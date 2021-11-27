@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B6D206F9E20BC955091587A7 /* Pods_NetworkPerformanceEvaluation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C43B0FC250DB89A2A1BCB5FA /* Pods_NetworkPerformanceEvaluation.framework */; };
 		EECD45C927526CD200B2DA26 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECD45C827526CD200B2DA26 /* AppDelegate.swift */; };
 		EECD45CB27526CD200B2DA26 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECD45CA27526CD200B2DA26 /* SceneDelegate.swift */; };
 		EECD45CD27526CD200B2DA26 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECD45CC27526CD200B2DA26 /* ViewController.swift */; };
@@ -16,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		48A223EBC79EADFC1B70A016 /* Pods-NetworkPerformanceEvaluation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkPerformanceEvaluation.debug.xcconfig"; path = "Target Support Files/Pods-NetworkPerformanceEvaluation/Pods-NetworkPerformanceEvaluation.debug.xcconfig"; sourceTree = "<group>"; };
+		C0C6464C59918EAD3FBBD9EA /* Pods-NetworkPerformanceEvaluation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkPerformanceEvaluation.release.xcconfig"; path = "Target Support Files/Pods-NetworkPerformanceEvaluation/Pods-NetworkPerformanceEvaluation.release.xcconfig"; sourceTree = "<group>"; };
+		C43B0FC250DB89A2A1BCB5FA /* Pods_NetworkPerformanceEvaluation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NetworkPerformanceEvaluation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EECD45C527526CD200B2DA26 /* NetworkPerformanceEvaluation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetworkPerformanceEvaluation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EECD45C827526CD200B2DA26 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EECD45CA27526CD200B2DA26 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6D206F9E20BC955091587A7 /* Pods_NetworkPerformanceEvaluation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		254D2D5A80B1534FFDEB2B24 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				48A223EBC79EADFC1B70A016 /* Pods-NetworkPerformanceEvaluation.debug.xcconfig */,
+				C0C6464C59918EAD3FBBD9EA /* Pods-NetworkPerformanceEvaluation.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		54A32A0996292996E13CF31E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C43B0FC250DB89A2A1BCB5FA /* Pods_NetworkPerformanceEvaluation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EECD45BC27526CD200B2DA26 = {
 			isa = PBXGroup;
 			children = (
 				EECD45C727526CD200B2DA26 /* NetworkPerformanceEvaluation */,
 				EECD45C627526CD200B2DA26 /* Products */,
+				254D2D5A80B1534FFDEB2B24 /* Pods */,
+				54A32A0996292996E13CF31E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EECD45D927526CD300B2DA26 /* Build configuration list for PBXNativeTarget "NetworkPerformanceEvaluation" */;
 			buildPhases = (
+				AE71B1041DF087B50DFF7222 /* [CP] Check Pods Manifest.lock */,
 				EECD45C127526CD200B2DA26 /* Sources */,
 				EECD45C227526CD200B2DA26 /* Frameworks */,
 				EECD45C327526CD200B2DA26 /* Resources */,
+				10DD73784462FA4FB0CCE92A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		10DD73784462FA4FB0CCE92A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NetworkPerformanceEvaluation/Pods-NetworkPerformanceEvaluation-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NetworkPerformanceEvaluation/Pods-NetworkPerformanceEvaluation-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NetworkPerformanceEvaluation/Pods-NetworkPerformanceEvaluation-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AE71B1041DF087B50DFF7222 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NetworkPerformanceEvaluation-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EECD45C127526CD200B2DA26 /* Sources */ = {
@@ -284,6 +353,7 @@
 		};
 		EECD45DA27526CD300B2DA26 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48A223EBC79EADFC1B70A016 /* Pods-NetworkPerformanceEvaluation.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -312,6 +382,7 @@
 		};
 		EECD45DB27526CD300B2DA26 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0C6464C59918EAD3FBBD9EA /* Pods-NetworkPerformanceEvaluation.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
