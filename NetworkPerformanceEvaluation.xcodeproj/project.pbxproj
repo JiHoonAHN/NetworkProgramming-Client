@@ -10,7 +10,7 @@
 		B6D206F9E20BC955091587A7 /* Pods_NetworkPerformanceEvaluation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C43B0FC250DB89A2A1BCB5FA /* Pods_NetworkPerformanceEvaluation.framework */; };
 		EECD45C927526CD200B2DA26 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECD45C827526CD200B2DA26 /* AppDelegate.swift */; };
 		EECD45CB27526CD200B2DA26 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECD45CA27526CD200B2DA26 /* SceneDelegate.swift */; };
-		EECD45CD27526CD200B2DA26 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECD45CC27526CD200B2DA26 /* MainViewController.swift */; };
+		EECD45CD27526CD200B2DA26 /* MainStudentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECD45CC27526CD200B2DA26 /* MainStudentViewController.swift */; };
 		EECD45D227526CD300B2DA26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EECD45D127526CD300B2DA26 /* Assets.xcassets */; };
 		EECD45D527526CD300B2DA26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EECD45D327526CD300B2DA26 /* LaunchScreen.storyboard */; };
 		EECD45E6275272AB00B2DA26 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECD45E5275272AB00B2DA26 /* Network.swift */; };
@@ -25,6 +25,17 @@
 		EECD45FC2752856800B2DA26 /* StudentModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECD45FB2752856800B2DA26 /* StudentModal.swift */; };
 		EECD45FE2752857100B2DA26 /* TeacherModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECD45FD2752857100B2DA26 /* TeacherModal.swift */; };
 		EECD4600275285C700B2DA26 /* ModalTF.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECD45FF275285C700B2DA26 /* ModalTF.swift */; };
+		EECD4604275291D200B2DA26 /* MainTeacherTabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECD4603275291D200B2DA26 /* MainTeacherTabbarController.swift */; };
+		EECD46062752922A00B2DA26 /* LectureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECD46052752922A00B2DA26 /* LectureViewController.swift */; };
+		EECD460B2752934800B2DA26 /* LectureTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECD460A2752934800B2DA26 /* LectureTableViewCell.swift */; };
+		EECD46122752A4D200B2DA26 /* AppleSDGothicNeoB.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EECD460D2752A4D100B2DA26 /* AppleSDGothicNeoB.ttf */; };
+		EECD46132752A4D200B2DA26 /* AppleSDGothicNeoH.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EECD460E2752A4D100B2DA26 /* AppleSDGothicNeoH.ttf */; };
+		EECD46142752A4D200B2DA26 /* AppleSDGothicNeoEB.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EECD460F2752A4D100B2DA26 /* AppleSDGothicNeoEB.ttf */; };
+		EECD46152752A4D200B2DA26 /* AppleSDGothicNeoM.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EECD46102752A4D100B2DA26 /* AppleSDGothicNeoM.ttf */; };
+		EECD46162752A4D200B2DA26 /* AppleSDGothicNeoL.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EECD46112752A4D200B2DA26 /* AppleSDGothicNeoL.ttf */; };
+		EECD46182752A72800B2DA26 /* NavigationBarCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECD46172752A72800B2DA26 /* NavigationBarCustom.swift */; };
+		EECD461B2752A7D000B2DA26 /* SubmissionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECD461A2752A7D000B2DA26 /* SubmissionViewController.swift */; };
+		EECD461E2752A94500B2DA26 /* MakeLectureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECD461D2752A94500B2DA26 /* MakeLectureViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,7 +45,7 @@
 		EECD45C527526CD200B2DA26 /* NetworkPerformanceEvaluation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetworkPerformanceEvaluation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EECD45C827526CD200B2DA26 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EECD45CA27526CD200B2DA26 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EECD45CC27526CD200B2DA26 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		EECD45CC27526CD200B2DA26 /* MainStudentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainStudentViewController.swift; sourceTree = "<group>"; };
 		EECD45D127526CD300B2DA26 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EECD45D427526CD300B2DA26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EECD45D627526CD300B2DA26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = NetworkPerformanceEvaluation/Supporting/Info.plist; sourceTree = SOURCE_ROOT; };
@@ -50,6 +61,17 @@
 		EECD45FB2752856800B2DA26 /* StudentModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentModal.swift; sourceTree = "<group>"; };
 		EECD45FD2752857100B2DA26 /* TeacherModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherModal.swift; sourceTree = "<group>"; };
 		EECD45FF275285C700B2DA26 /* ModalTF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalTF.swift; sourceTree = "<group>"; };
+		EECD4603275291D200B2DA26 /* MainTeacherTabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTeacherTabbarController.swift; sourceTree = "<group>"; };
+		EECD46052752922A00B2DA26 /* LectureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LectureViewController.swift; sourceTree = "<group>"; };
+		EECD460A2752934800B2DA26 /* LectureTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LectureTableViewCell.swift; sourceTree = "<group>"; };
+		EECD460D2752A4D100B2DA26 /* AppleSDGothicNeoB.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AppleSDGothicNeoB.ttf; sourceTree = "<group>"; };
+		EECD460E2752A4D100B2DA26 /* AppleSDGothicNeoH.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AppleSDGothicNeoH.ttf; sourceTree = "<group>"; };
+		EECD460F2752A4D100B2DA26 /* AppleSDGothicNeoEB.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AppleSDGothicNeoEB.ttf; sourceTree = "<group>"; };
+		EECD46102752A4D100B2DA26 /* AppleSDGothicNeoM.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AppleSDGothicNeoM.ttf; sourceTree = "<group>"; };
+		EECD46112752A4D200B2DA26 /* AppleSDGothicNeoL.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AppleSDGothicNeoL.ttf; sourceTree = "<group>"; };
+		EECD46172752A72800B2DA26 /* NavigationBarCustom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarCustom.swift; sourceTree = "<group>"; };
+		EECD461A2752A7D000B2DA26 /* SubmissionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmissionViewController.swift; sourceTree = "<group>"; };
+		EECD461D2752A94500B2DA26 /* MakeLectureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeLectureViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +124,7 @@
 		EECD45C727526CD200B2DA26 /* NetworkPerformanceEvaluation */ = {
 			isa = PBXGroup;
 			children = (
+				EECD460C2752A4C500B2DA26 /* Font */,
 				EECD45E22752718A00B2DA26 /* Supporting */,
 				EECD45E12752706700B2DA26 /* Resource */,
 				EECD45E02752705B00B2DA26 /* Source */,
@@ -121,10 +144,13 @@
 		EECD45DD2752704100B2DA26 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				EECD461C2752A93200B2DA26 /* MakeLecture */,
+				EECD46192752A7B100B2DA26 /* Submission */,
+				EECD4609275292C400B2DA26 /* Tabbar */,
+				EECD4608275292BB00B2DA26 /* Login */,
+				EECD4607275292B200B2DA26 /* Lecture */,
 				EECD45F8275284F400B2DA26 /* Modal */,
 				EECD45EB2752771C00B2DA26 /* Base */,
-				EECD45E9275276DB00B2DA26 /* LoginViewController.swift */,
-				EECD45CC27526CD200B2DA26 /* MainViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -141,7 +167,9 @@
 			children = (
 				EECD45EE2752776800B2DA26 /* Base */,
 				EECD45F6275281B000B2DA26 /* CustomTF.swift */,
+				EECD460A2752934800B2DA26 /* LectureTableViewCell.swift */,
 				EECD45FF275285C700B2DA26 /* ModalTF.swift */,
+				EECD46172752A72800B2DA26 /* NavigationBarCustom.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -228,6 +256,61 @@
 			path = Modal;
 			sourceTree = "<group>";
 		};
+		EECD4607275292B200B2DA26 /* Lecture */ = {
+			isa = PBXGroup;
+			children = (
+				EECD46052752922A00B2DA26 /* LectureViewController.swift */,
+			);
+			name = Lecture;
+			path = "강의";
+			sourceTree = "<group>";
+		};
+		EECD4608275292BB00B2DA26 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				EECD45E9275276DB00B2DA26 /* LoginViewController.swift */,
+			);
+			name = Login;
+			path = "로그인";
+			sourceTree = "<group>";
+		};
+		EECD4609275292C400B2DA26 /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				EECD4603275291D200B2DA26 /* MainTeacherTabbarController.swift */,
+				EECD45CC27526CD200B2DA26 /* MainStudentViewController.swift */,
+			);
+			path = Tabbar;
+			sourceTree = "<group>";
+		};
+		EECD460C2752A4C500B2DA26 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				EECD460D2752A4D100B2DA26 /* AppleSDGothicNeoB.ttf */,
+				EECD460F2752A4D100B2DA26 /* AppleSDGothicNeoEB.ttf */,
+				EECD460E2752A4D100B2DA26 /* AppleSDGothicNeoH.ttf */,
+				EECD46112752A4D200B2DA26 /* AppleSDGothicNeoL.ttf */,
+				EECD46102752A4D100B2DA26 /* AppleSDGothicNeoM.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		EECD46192752A7B100B2DA26 /* Submission */ = {
+			isa = PBXGroup;
+			children = (
+				EECD461A2752A7D000B2DA26 /* SubmissionViewController.swift */,
+			);
+			path = Submission;
+			sourceTree = "<group>";
+		};
+		EECD461C2752A93200B2DA26 /* MakeLecture */ = {
+			isa = PBXGroup;
+			children = (
+				EECD461D2752A94500B2DA26 /* MakeLectureViewController.swift */,
+			);
+			path = MakeLecture;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -290,6 +373,11 @@
 			files = (
 				EECD45D527526CD300B2DA26 /* LaunchScreen.storyboard in Resources */,
 				EECD45D227526CD300B2DA26 /* Assets.xcassets in Resources */,
+				EECD46132752A4D200B2DA26 /* AppleSDGothicNeoH.ttf in Resources */,
+				EECD46142752A4D200B2DA26 /* AppleSDGothicNeoEB.ttf in Resources */,
+				EECD46162752A4D200B2DA26 /* AppleSDGothicNeoL.ttf in Resources */,
+				EECD46122752A4D200B2DA26 /* AppleSDGothicNeoB.ttf in Resources */,
+				EECD46152752A4D200B2DA26 /* AppleSDGothicNeoM.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,18 +431,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				EECD45F22752777900B2DA26 /* CollectionView.swift in Sources */,
+				EECD461E2752A94500B2DA26 /* MakeLectureViewController.swift in Sources */,
 				EECD45EA275276DB00B2DA26 /* LoginViewController.swift in Sources */,
 				EECD4600275285C700B2DA26 /* ModalTF.swift in Sources */,
 				EECD45FE2752857100B2DA26 /* TeacherModal.swift in Sources */,
 				EECD45FA2752853100B2DA26 /* BaseModal.swift in Sources */,
-				EECD45CD27526CD200B2DA26 /* MainViewController.swift in Sources */,
+				EECD46062752922A00B2DA26 /* LectureViewController.swift in Sources */,
+				EECD45CD27526CD200B2DA26 /* MainStudentViewController.swift in Sources */,
 				EECD45F5275280D400B2DA26 /* extension.swift in Sources */,
+				EECD4604275291D200B2DA26 /* MainTeacherTabbarController.swift in Sources */,
 				EECD45C927526CD200B2DA26 /* AppDelegate.swift in Sources */,
+				EECD460B2752934800B2DA26 /* LectureTableViewCell.swift in Sources */,
 				EECD45FC2752856800B2DA26 /* StudentModal.swift in Sources */,
+				EECD461B2752A7D000B2DA26 /* SubmissionViewController.swift in Sources */,
 				EECD45E6275272AB00B2DA26 /* Network.swift in Sources */,
 				EECD45E8275272EA00B2DA26 /* BaseApI.swift in Sources */,
 				EECD45F02752777000B2DA26 /* TableView.swift in Sources */,
 				EECD45ED2752774000B2DA26 /* BaseVC.swift in Sources */,
+				EECD46182752A72800B2DA26 /* NavigationBarCustom.swift in Sources */,
 				EECD45F7275281B000B2DA26 /* CustomTF.swift in Sources */,
 				EECD45CB27526CD200B2DA26 /* SceneDelegate.swift in Sources */,
 			);

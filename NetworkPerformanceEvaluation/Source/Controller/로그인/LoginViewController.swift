@@ -8,8 +8,11 @@
 import UIKit
 import Then
 import SnapKit
+import KeychainSwift
+
 class LoginViewController : BaseVc{
     //MARK: - 모달 background 설정
+    private let keychain  = KeychainSwift()
    private  let bgView = UIView().then {
         $0.backgroundColor = .black
         $0.alpha = 0
@@ -42,11 +45,19 @@ class LoginViewController : BaseVc{
     //MARK: - Selector
     @objc private func studentLogin(){
         NSLog("Touch Student Login")
-        
+        let studentLoginModalsVC = StudentModal.instance()
+        studentLoginModalsVC.baseDelegate = self
+        studentLoginModalsVC.delegate = self
+        addDim()
+        present(studentLoginModalsVC, animated: true,completion: nil)
     }
     @objc private func teacherLogin(){
         NSLog("Touch Teacher Login")
-
+        let teacherLoginModalsVC = TeacherModal.instance()
+        teacherLoginModalsVC.baseDelegate = self
+        teacherLoginModalsVC.delegate = self
+        addDim()
+        present(teacherLoginModalsVC, animated: true, completion: nil)
     }
     
     //MARK: - Helper
@@ -65,12 +76,12 @@ class LoginViewController : BaseVc{
             $0.height.equalTo(bounds.height/3.274)
         }
         logo.snp.makeConstraints{
-            $0.centerY.equalTo(bgView)
+            $0.centerY.equalTo(logobgView)
             $0.centerX.equalToSuperview()
             $0.height.width.equalTo(92)
         }
         studentBtn.snp.makeConstraints{
-            $0.top.equalTo(bgView.snp.bottom).offset(bounds.height/3.5)
+            $0.top.equalTo(logobgView.snp.bottom).offset(bounds.height/3.5)
             $0.left.right.equalToSuperview().inset(34)
             $0.height.equalTo(bounds.height/15)
         }
@@ -79,6 +90,18 @@ class LoginViewController : BaseVc{
             $0.left.right.equalToSuperview().inset(34)
             $0.height.equalTo(bounds.height/15)
         }
+    }
+    private func studentLoginAction(_ placeholder : String){
+        NSLog("로그인 Student")
+        keychain.delete("Student")
+        keychain.set(placeholder, forKey: "Student")
+        navigationController?.pushViewController(MainStudentViewController(), animated: true)
+    }
+    private func teacherLoginAction(_ placeholder : String){
+        NSLog("로그인 teacher")
+        keychain.delete("Teacher")
+        keychain.set(placeholder, forKey: "Teacher")
+        navigationController?.pushViewController(MainTeacherTabbarController(), animated: true)
     }
 }
 extension LoginViewController {
@@ -99,5 +122,25 @@ extension LoginViewController {
             self?.bgView.removeFromSuperview()
             self?.navigationController?.navigationBar.backgroundColor = .clear
         }
+    }
+}
+
+
+extension LoginViewController : BaseModalDelegate {
+    func onTapClick() {
+        self.removeDim()
+    }
+}
+
+extension LoginViewController : StudentModalDelegate{
+    func updateStudentModal(placeholder: String) {
+        self.studentLoginAction(placeholder)
+        self.removeDim()
+    }
+}
+extension LoginViewController : TeacherModalDelegate{
+    func updateTeachertModal(placeholder: String) {
+        self.teacherLoginAction(placeholder)
+        self.removeDim()
     }
 }
